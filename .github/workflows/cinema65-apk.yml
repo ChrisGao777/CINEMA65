@@ -1,7 +1,7 @@
-name: CINEMA65 v0.9.5 Mask Proposal Audit
+name: CINEMA65 v0.9.5 Auto Audit Lab
 on:
   push:
-    branches: [cinema65-v095-mask-audit]
+    branches: [cinema65-v096-tone-guard-experiment]
   workflow_dispatch:
 jobs:
   assemble:
@@ -121,9 +121,9 @@ jobs:
           sha256sum app/build/outputs/apk/debug/app-debug.apk > CINEMA65-v0.9.5-mask-audit.apk.sha256
       - uses: actions/upload-artifact@v4
         with:
-          name: CINEMA65-v0.9.5-mask-audit-ci-apk
+          name: CINEMA65-v0.9.6-tone-guard-ab-apk
           path: |
             app/build/outputs/apk/debug/app-debug.apk
-            CINEMA65-v0.9.3-onnx-compat.apk.sha256
+            CINEMA65-v0.9.5-mask-audit.apk.sha256
             model-sha256sums.txt
             apk-inventory.txt
