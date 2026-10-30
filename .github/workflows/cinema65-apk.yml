@@ -1,7 +1,7 @@
-name: CINEMA65 v0.9.5 Auto Audit Lab
+name: CINEMA65 v0.9.7 Measured Guard Lab
 on:
   push:
-    branches: [cinema65-v096-tone-guard-experiment]
+    branches: [cinema65-v097-scene-aware-lab]
   workflow_dispatch:
 jobs:
   assemble:
@@ -121,7 +121,7 @@ jobs:
           sha256sum app/build/outputs/apk/debug/app-debug.apk > CINEMA65-v0.9.5-mask-audit.apk.sha256
       - uses: actions/upload-artifact@v4
         with:
-          name: CINEMA65-v0.9.6-tone-guard-ab-apk
+          name: CINEMA65-v0.9.7-measured-guard-apk
           path: |
             app/build/outputs/apk/debug/app-debug.apk
             CINEMA65-v0.9.5-mask-audit.apk.sha256

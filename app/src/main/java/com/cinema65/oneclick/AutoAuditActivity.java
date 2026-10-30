@@ -48,7 +48,7 @@ public final class AutoAuditActivity extends Activity {
   }
   private void batch(ArrayList<Uri> photos){
     Uri output=null;int done=0,failed=0;
-    StringBuilder report=new StringBuilder("CINEMA65 AUTO AUDIT v0.9.5\nDevice: "+Build.MANUFACTURER+" "+Build.MODEL+" Android "+Build.VERSION.RELEASE+"\nNo raw paths or EXIF stored. No ground-truth semantic labels. Original-resolution export NOT tested.\n\n");
+    StringBuilder report=new StringBuilder("CINEMA65 AUTO AUDIT v0.9.7\nDevice: "+Build.MANUFACTURER+" "+Build.MODEL+" Android "+Build.VERSION.RELEASE+"\nNo raw paths or EXIF stored. No ground-truth semantic labels. Original-resolution export NOT tested.\n\n");
     try {
       ContentValues values=new ContentValues();values.put(MediaStore.MediaColumns.DISPLAY_NAME,"CINEMA65_AUDIT_"+System.currentTimeMillis()+".zip");values.put(MediaStore.MediaColumns.MIME_TYPE,"application/zip");values.put(MediaStore.MediaColumns.RELATIVE_PATH,"Download/CINEMA65");values.put(MediaStore.MediaColumns.IS_PENDING,1);
       output=getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI,values);
@@ -111,26 +111,11 @@ public final class AutoAuditActivity extends Activity {
         CandidateRanker.Metrics m=new CandidateRanker.Metrics(input,candidate,w,h);
         report.append("director "+i+": delta="+m.meanAbsDifference+" black="+m.newBlack+" white="+m.newWhite+" newEdges="+m.inventedEdgeRate+"\n");
         image(zip,key+"/director_"+i+".jpg",candidate,w,h);
-        double drop=0, dark=0;
-        for(int k=0;k<input.length;k++){
-          int a=input[k],b=candidate[k];
-          double ya=.2126*((a>>>16)&255)+.7152*((a>>>8)&255)+.0722*(a&255);
-          double yb=.2126*((b>>>16)&255)+.7152*((b>>>8)&255)+.0722*(b&255);
-          drop+=ya-yb;
-          if(ya>=25&&yb<25)dark++;
-          if(ya<25&&yb>=25)dark--;
-        }
-        double factor=ToneBudgetGuard.strength(Math.max(0,drop/input.length),Math.max(0,dark/input.length));
-        int[] guarded=new int[input.length];
-        for(int k=0;k<input.length;k++){
-          int a=input[k],b=candidate[k];
-          int r=(int)Math.round(((a>>>16)&255)* (1-factor)+((b>>>16)&255)*factor);
-          int gch=(int)Math.round(((a>>>8)&255)*(1-factor)+((b>>>8)&255)*factor);
-          int bl=(int)Math.round((a&255)*(1-factor)+(b&255)*factor);
-          guarded[k]=0xff000000|(r<<16)|(gch<<8)|bl;
-        }
+        int[] guarded=candidate.clone();
+        ToneBudgetGuard.Result result=ToneBudgetGuard.apply(input,guarded);
         image(zip,key+"/director_guarded_"+i+".jpg",guarded,w,h);
-        report.append("director_guarded "+i+": factor="+factor+"\\n");
+        report.append("director_guarded "+i+": factor="+result.strength+
+          " finalMeanDrop="+result.meanDrop+" finalAddedDark="+result.addedDark+"\\n");
       }
       report.append("semantic accuracy: NOT VERIFIED; aesthetic preference: NOT VERIFIED; 48x48 masks cannot validate fine edges.\n");
     }finally{if(bitmap!=null)bitmap.recycle();}
