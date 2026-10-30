@@ -1,0 +1,28 @@
+photo,accepted,style,model_gain,color_budget,coord_RGB_delta,color_RGB_delta,total_RGB_delta,subject_luma_delta,background_luma_delta,background_chroma_delta,delta_new_black,delta_new_white,delta_new_hard_edge,policy,gate
+before_5363.jpg,FALLBACK,0,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5363.jpg,FALLBACK,1,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5363.jpg,FALLBACK,2,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5364.jpg,ACCEPT,0,1.000,0.0639,0.0506,0.0462,0.0931,+0.2393,+0.0152,-0.1608,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5364.jpg,ACCEPT,1,1.000,0.0639,0.0176,0.0674,0.0845,-0.0942,-0.0031,-0.2343,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5364.jpg,ACCEPT,2,1.000,0.0639,0.0251,0.0889,0.1118,-0.1128,+0.0021,-0.3094,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5365.jpg,ACCEPT,0,1.000,0.0219,0.0614,0.0057,0.0667,+0.1473,+0.0242,-0.0225,+0.0000000,+0.0000000,+0.0000028,full budget passed,accepted
+before_5365.jpg,ACCEPT,1,1.000,0.0219,0.0432,0.0081,0.0511,-0.1052,-0.0155,-0.0314,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5365.jpg,ACCEPT,2,1.000,0.0219,0.0320,0.0108,0.0425,-0.0283,-0.0172,-0.0421,+0.0000000,+0.0000000,-0.0000028,full budget passed,accepted
+before_5366.jpg,FALLBACK,0,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5366.jpg,FALLBACK,1,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5366.jpg,FALLBACK,2,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5367.jpg,FALLBACK,0,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5367.jpg,FALLBACK,1,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5367.jpg,FALLBACK,2,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+before_5368.jpg,ACCEPT,0,1.000,0.0000,0.0382,0.0000,0.0382,-0.0042,-0.0433,+0.0000,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5368.jpg,ACCEPT,1,1.000,0.0000,0.0623,0.0000,0.0623,-0.0064,-0.0740,+0.0000,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5368.jpg,ACCEPT,2,1.000,0.0000,0.1742,0.0000,0.1742,-0.0201,-0.2050,+0.0000,+0.0000000,+0.0000000,+0.0000000,full budget passed,accepted
+before_5369.jpg,ACCEPT,0,1.000,0.0204,0.1118,0.0006,0.1124,+1.2010,+0.0218,-0.0019,+0.0000000,+0.0000000,+0.0000056,full budget passed,accepted
+before_5369.jpg,ACCEPT,1,1.000,0.0204,0.0268,0.0009,0.0277,-0.2895,-0.0051,-0.0027,+0.0000000,+0.0000000,-0.0000028,full budget passed,accepted
+before_5369.jpg,ACCEPT,2,1.000,0.0204,0.0315,0.0012,0.0327,-0.3381,-0.0061,-0.0036,+0.0000000,+0.0000000,-0.0000028,full budget passed,accepted
+IMG_6034.jpeg,FALLBACK,0,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+IMG_6034.jpeg,FALLBACK,1,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+IMG_6034.jpeg,FALLBACK,2,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+IMG_6062.jpeg,FALLBACK,0,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+IMG_6062.jpeg,FALLBACK,1,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected
+IMG_6062.jpeg,FALLBACK,2,0.000,no color budget,0.0000,0.0000,0.0000,+0.0000,+0.0000,+0.0000,+0.0000000,+0.0000000,+0.0000000,no credible model evidence,rejected

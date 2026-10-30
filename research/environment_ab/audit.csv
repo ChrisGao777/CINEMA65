@@ -1,0 +1,28 @@
+photo,gate,style,semantic_trust,model_gain,environment_mean,environment_subject_L,environment_reason,environment_delta_rgb,foreground_delta_luma,background_delta_luma,added_near_black,added_near_white,added_artificial_edge,added_edge_reversal
+test_5363.jpg,FALLBACK,0,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5363.jpg,FALLBACK,1,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5363.jpg,FALLBACK,2,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5364.jpg,ACCEPT,0,0.900,1.00,0.00000,55.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5364.jpg,ACCEPT,1,0.900,1.00,0.00000,55.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5364.jpg,ACCEPT,2,0.900,1.00,0.00000,55.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5365.jpg,ACCEPT,0,0.900,1.00,0.00000,56.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5365.jpg,ACCEPT,1,0.900,1.00,0.00000,56.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5365.jpg,ACCEPT,2,0.900,1.00,0.00000,56.7,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5366.jpg,FALLBACK,0,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5366.jpg,FALLBACK,1,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5366.jpg,FALLBACK,2,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5367.jpg,FALLBACK,0,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5367.jpg,FALLBACK,1,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5367.jpg,FALLBACK,2,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5368.jpg,ACCEPT,0,0.900,1.00,0.12996,87.1,full budget passed,0.7892,-0.0614,-0.9480,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5368.jpg,ACCEPT,1,0.900,1.00,0.12996,87.1,full budget passed,1.1374,-0.0888,-1.3655,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5368.jpg,ACCEPT,2,0.900,1.00,0.12996,87.1,full budget passed,1.2859,-0.1028,-1.5447,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5369.jpg,ACCEPT,0,0.900,1.00,0.00000,47.2,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5369.jpg,ACCEPT,1,0.900,1.00,0.00000,47.2,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+test_5369.jpg,ACCEPT,2,0.900,1.00,0.00000,47.2,full budget passed,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6034.jpeg,FALLBACK,0,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6034.jpeg,FALLBACK,1,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6034.jpeg,FALLBACK,2,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6062.jpeg,FALLBACK,0,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6062.jpeg,FALLBACK,1,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
+IMG_6062.jpeg,FALLBACK,2,0.000,0.00,0.00000,no environment guidance,no credible model evidence,0.0000,+0.0000,+0.0000,+0.000000,+0.000000,+0.0000000,+0.0000000
